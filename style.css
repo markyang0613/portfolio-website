@@ -10,13 +10,13 @@ body, h1, h2, p, ul, li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 20px;
+  padding: 5% 2.5%;
   background-color: #f8f9fa;
   color: #333;
   width: 90%;
-  max-width: 800px;
-  margin: 40px auto;
-  border-radius: 8px;
+  max-width: 80%;
+  margin: 5% auto;
+  border-radius: 1%;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   position: relative;
 }
@@ -31,7 +31,7 @@ body, h1, h2, p, ul, li {
 .intro-text {
   flex: 1;
   text-align: left;
-  margin-right: 20px;
+  margin-right: 2.5%;
 }
 
 .intro-text h2 {
@@ -41,7 +41,7 @@ body, h1, h2, p, ul, li {
 
 .intro-text h1 {
   font-size: 2.4rem;
-  margin: 10px 0;
+  margin: 2.5% 0;
 }
 
 .intro-text p {
@@ -56,13 +56,11 @@ body, h1, h2, p, ul, li {
 }
 
 .intro-image {
-  max-width: 350px;
+  max-width: 35%;
   height: auto;
   border-radius: 50%;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-
 
 /* Body Styles */
 body {
@@ -70,16 +68,16 @@ body {
   line-height: 1.6;
   background-color: #f0f8ff;
   color: #333;
-  padding: 20px;
+  padding: 2.5%;
 }
 
 /* Header Styles */
 header {
   text-align: center;
   margin: 0 auto;
-  padding: 20px;
+  padding: 2.5%;
   background-color: #eaf6fb;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 0.25% solid #ccc;
   font-family: 'Arial';
 }
 
@@ -95,19 +93,19 @@ header {
 }
 
 .profile-image {
-  width: 130px; /* Set width for the image */
-  height: 130px; /* Set height for the image */
+  width: 13%;
+  height: 13%;
   border-radius: 50%; /* Makes the image circular */
-  margin-right: 20px; /* Adds space between the image and text */
-  border: 3px solid #0066cc; /* Optional: Adds a border around the image */
+  margin-right: 2.5%; /* Adds space between the image and text */
+  border: 0.3% solid #0066cc; /* Optional: Adds a border around the image */
   opacity: 0; /* Start invisible for animation */
-  transform: translateY(50px); /* Start slightly lower for animation */
+  transform: translateY(5%);
   transition: all 1s ease-in-out; /* Smooth transition effect */
 }
 
 header h1, header p, .profile-image, .contact-info {
   opacity: 0; /* Start invisible */
-  transform: translateY(50px); /* Start slightly lower */
+  transform: translateY(5%);
   transition: all 1s ease-in-out; /* Smooth transition effect */
 }
 
@@ -117,7 +115,7 @@ header h1.animate, header p.animate, .profile-image.animate, .contact-info.anima
 }
 
 .contact-info {
-  margin-top: 10px; /* Add spacing above the contact info */
+  margin-top: 1%; /* Add spacing above the contact info */
   font-size: 1.1rem; /* Slightly smaller font for contact info */
   color: #555; /* Subtle color for secondary text */
   text-align: left;
@@ -126,33 +124,31 @@ header h1.animate, header p.animate, .profile-image.animate, .contact-info.anima
 header p {
   font-family: 'Arial';
   color: #333;
-  margin: 5px 0; /* Add spacing between paragraphs */
+  margin: 0.5% 0; /* Add spacing between paragraphs */
   font-size: 1.5rem;
 }
-
-
-
 
 /* Section Styles */
 section {
   font-family: 'Arial', sans-serif;
-  margin: 20px 0;
-  padding: 10px;
+  margin: 2.5% 0;
+  padding: 1.25%;
   background: #ffffff;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Modern shadow for section */
-  border-radius: 8px; /* Rounded corners for a modern look */
-  main > section {
-    margin: 40px 0; /* Adds vertical space between sections */
-  }
+  border-radius: 1%; /* Rounded corners for a modern look */
+}
+
+main > section {
+  margin: 5% 0; /* Adds vertical space between sections */
 }
 
 button {
   background-color: #0066cc;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 1.25% 2.5%;
   font-size: 1rem;
-  border-radius: 5px;
+  border-radius: 0.5%;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -164,34 +160,33 @@ button:hover {
 /* Footer Styles */
 footer {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 2.5%;
   color: #666;
   font-size: 0.9rem;
 }
 
-
 /* Timeline Section */
 #timeline-section {
-  padding: 40px 20px;
+  padding: 5% 2.5%;
   background-color: #ffffff;
-  border-radius: 8px;
+  border-radius: 1%;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  margin: 20px auto;
+  margin: 2.5% auto;
   width: 90%;
-  max-width: 800px;
+  max-width: 80%;
   text-align: center;
 }
 
 #timeline-section h2 {
   font-family: 'Arial', sans-serif;
   color: #0066cc;
-  margin-bottom: 20px;
+  margin-bottom: 2.5%;
 }
 
 /* Timeline Styles */
 .timeline {
   position: relative;
-  padding: 20px 0;
+  padding: 2.5% 0;
 }
 
 .timeline::before {
@@ -200,13 +195,11 @@ footer {
   left: 50%;
   top: 0;
   bottom: 0;
-  width: 4px;
+  width: 0.4%;
   background: #0066cc;
   transform: translateX(-50%);
   z-index: 1;
 }
-
-
 
 .timeline-date {
   position: absolute;
@@ -216,8 +209,8 @@ footer {
   font-size: 0.9rem;
   color: #666;
   background: #ffffff;
-  padding: 5px 10px;
-  border-radius: 5px;
+  padding: 0.5% 1.25%;
+  border-radius: 0.5%;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for visibility */
 }
 
@@ -225,20 +218,19 @@ footer {
   position: relative;
   width: 45%;
   background: #eaf6fb;
-  padding: 20px 20px 30px; /* Add extra bottom padding */
-  border-radius: 8px;
+  padding: 2.5% 2.5% 3.75%; /* Add extra bottom padding */
+  border-radius: 1%;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   text-align: left;
-  margin-top: 20px; /* Space between the timeline line and content */
+  margin-top: 2.5%; /* Space between the timeline line and content */
 }
 
 .timeline-content h3 {
   font-family: 'Arial', sans-serif;
   font-size: 1.2rem;
   color: #333;
-  margin: 5px 0; /* Reduce margin between the date and header */
+  margin: 0.5% 0; /* Reduce margin between the date and header */
 }
-
 
 .timeline-content p {
   font-family: 'Arial', sans-serif;
@@ -248,13 +240,13 @@ footer {
 }
 
 .timeline-content .logo {
-  width: 50px; /* Set logo width */
-  height: 50px; /* Set logo height */
+  width: 5%;
+  height: 5%;
   border-radius: 50%; /* Make the image circular */
-  margin-right: 10px; /* Add space between the logo and the title */
+  margin-right: 1.25%; /* Add space between the logo and the title */
   float: left; /* Align the logo next to the title */
   opacity: 0; /* Start invisible for animation */
-  transform: translateY(30px); /* Start slightly lower */
+  transform: translateY(3%);
   transition: all 0.5s ease-in-out; /* Smooth transition effect */
 }
 
@@ -277,17 +269,15 @@ footer {
 /* Adjusting timeline date next to arrow */
 .timeline-item:nth-child(odd) .timeline-date {
   left: auto; /* Reset left positioning */
-  right: -190px; /* Place it to the left of the arrow */
+  right: -19%; /* Place it to the left of the arrow */
   top: 50%; /* Vertically center */
   transform: translateY(-50%);
- 
 }
 
 .timeline-item:nth-child(even) .timeline-date {
-  left: -189px; /* Place it to the right of the arrow */
+  left: -18.9%; /* Place it to the right of the arrow */
   top: 50%; /* Vertically center */
   transform: translateY(-50%);
-
 }
 
 .timeline-item:nth-child(odd) .timeline-content::after,
@@ -302,13 +292,13 @@ footer {
 }
 
 .timeline-item:nth-child(odd) .timeline-content::after {
-  right: -30px; /* Position arrow outside the box */
+  right: -3%; /* Position arrow outside the box */
   top: 50%; /* Center the arrow vertically */
   transform: translateY(-50%) rotate(180deg); /* Point arrow to the left box */
 }
 
 .timeline-item:nth-child(even) .timeline-content::after {
-  left: -30px; /* Position arrow outside the box */
+  left: -3%; /* Position arrow outside the box */
   top: 50%; /* Center the arrow vertically */
   transform: translateY(-50%) rotate(0deg); /* Point arrow to the right box */
 }
@@ -324,7 +314,7 @@ footer {
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(3%);
   }
   to {
     opacity: 1;
@@ -335,7 +325,7 @@ footer {
 /* Apply Fade-In Animation */
 .timeline-item {
   opacity: 0; /* Start invisible */
-  transform: translateY(30px); /* Start slightly lower */
+  transform: translateY(3%); /* Start slightly lower */
   transition: all 0.5s ease-in-out; /* Smooth transition for non-animated */
 }
 
@@ -345,35 +335,35 @@ footer {
 }
 
 #projects-section {
-  padding: 40px 20px;
+  padding: 5% 2.5%;
   background-color: #ffffff;
-  border-radius: 8px;
+  border-radius: 1%;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  margin: 20px auto;
+  margin: 2.5% auto;
   width: 90%;
-  max-width: 800px;
+  max-width: 80%;
   text-align: center;
 }
 
 #projects-section h2 {
   font-family: 'Arial', sans-serif;
   color: #0066cc;
-  margin-bottom: 20px;
+  margin-bottom: 2.5%;
 }
 
 .projects-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 2.5%;
   justify-content: center;
 }
 
 .project-card {
   background-color: #f0f8ff;
-  border-radius: 8px;
+  border-radius: 1%;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  width: 250px;
+  padding: 2.5%;
+  width: 25%;
   text-align: left;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -382,23 +372,23 @@ footer {
   font-family: 'Arial', sans-serif;
   color: #333;
   font-size: 1.2rem;
-  margin-bottom: 10px;
+  margin-bottom: 2.5%;
 }
 
 .project-card p {
   font-family: 'Arial', sans-serif;
   color: #555;
   font-size: 0.9rem;
-  margin-bottom: 15px;
+  margin-bottom: 3.75%;
 }
 
 .project-card button {
   background-color: #0066cc;
   color: white;
   border: none;
-  padding: 10px 15px;
+  padding: 1.25% 1.875%;
   font-size: 0.9rem;
-  border-radius: 5px;
+  border-radius: 0.5%;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -416,11 +406,11 @@ footer {
 .index-navigation {
   display: flex;
   justify-content: center;
-  gap: 10px;
-  margin-top: 15px;
+  gap: 1.25%;
+  margin-top: 1.875%;
   background-color: #eaf6fb;
-  padding: 10px;
-  border-radius: 5px;
+  padding: 1.25%;
+  border-radius: 0.5%;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -428,8 +418,8 @@ footer {
   background-color: #0066cc;
   color: white;
   border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
+  padding: 1.25% 1.875%;
+  border-radius: 0.5%;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -445,27 +435,27 @@ html {
 
 /* Contact Section Styles */
 .contact-section {
-  padding: 40px 20px;
+  padding: 5% 2.5%;
   background-color: #f9f9f9;
-  border-radius: 8px;
+  border-radius: 1%;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  margin: 20px auto;
+  margin: 2.5% auto;
   width: 90%;
-  max-width: 800px;
+  max-width: 80%;
   text-align: center;
 }
 
 .contact-section h2 {
   font-family: 'Arial', sans-serif;
   color: #0066cc;
-  margin-bottom: 20px;
+  margin-bottom: 2.5%;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
+  gap: 1.875%;
 }
 
 .form-group {
@@ -477,16 +467,16 @@ html {
 
 .form-group label {
   font-size: 1rem;
-  margin-bottom: 5px;
+  margin-bottom: 0.625%;
   color: #333;
 }
 
 .form-group input,
 .form-group textarea {
   width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  padding: 1.25%;
+  border: 0.1% solid #ccc;
+  border-radius: 0.5%;
   font-size: 1rem;
   color: #333;
 }
@@ -495,9 +485,9 @@ html {
   background-color: #0066cc;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 1.25% 2.5%;
   font-size: 1rem;
-  border-radius: 5px;
+  border-radius: 0.5%;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
