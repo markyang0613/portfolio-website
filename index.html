@@ -6,206 +6,717 @@
   <title>JoonseoYang</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 </head>
 <body>
-  <header>
-    <div class="header-container">
-      <img src="profile.jpg" alt="Profile Image" class="profile-image">
-      <div>
-        <h1>Joonseo Yang</h1>
-        <p>Data Science Professional | Driving Insights with Machine Learning, Predictive Analytics, and AI Solutions</p>
-        <p class="contact-info">Berkeley, CA • +1(510)-292-3424 • joonseoyang0613@berkeley.edu • <a href="https://linkedin.com/in/joonseoyang/" target="_blank">LinkedIn</a> • <a href="https://github.com/markyang0613?tab=repositories" target="_blank">GitHub</a></p>
-      </div>
+  <div id="loading-overlay">
+    <div class="loader">
+      <div class="loader-circle"></div>
+      <div class="loader-text">Loading...</div>
     </div>
-    <!-- Add Index Section -->
-    <nav class="index-navigation">
-      <button class="index-btn" data-target="#timeline-section">Work Experience</button>
-      <button class="index-btn" data-target="#projects-section">Projects</button>
-      <button class="index-btn" data-target="#contact-section">Contact Me</button>
-    </nav>
-  </header>
-
-  <main>
-    <!-- Introduction Section -->
-    <section id="introduction-section">
-      <div class="intro-container">
-        <div class="intro-text">
-          <h2>Introduction</h2>
-          <h1>Joonseo Yang</h1>
-          <p>As a driven and passionate data science professional with expertise in machine learning, predictive analytics, and AI, I specialize in transforming complex datasets into actionable insights. My academic background in Data Science from UC Berkeley, combined with hands-on experience in building machine learning models and solving real-world problems, allows me to deliver innovative solutions in healthcare, education, and business. Whether it’s enhancing predictive accuracy or developing robust models for diverse industries, I thrive on crafting data-driven strategies that drive measurable results. I’m excited about leveraging cutting-edge technologies to create impactful solutions and collaborate with forward-thinking teams.</p>
+  </div>
+  
+  <div class="main-content">
+    <header>
+      <div class="header-content">
+        <div class="theme-toggle">
+          <button id="theme-toggle-btn" aria-label="Toggle dark mode">
+            <i class="fas fa-moon"></i>
+          </button>
         </div>
-        <div class="intro-image-container">
-          <img src="introduction.jpg" alt="Joonseo Yang" class="intro-image">
-        </div>
+        <h1 class="site-title">Joonseo Yang</h1>
+        <h2 class="site-subtitle">Data Scientist | Software Developer | AI Scientist</h2>
+        <nav class="interactive-nav">
+          <ul class="nav-list">
+            <li><a href="#introduction-section" class="nav-link">About</a></li>
+            <li><a href="#timeline-section" class="nav-link">Experience</a></li>
+            <li><a href="#projects-section" class="nav-link">Projects</a></li>
+            <li><a href="#contact-section" class="nav-link">Contact</a></li>
+            <li class="social-links">
+              <a href="https://www.linkedin.com/in/joonseoyang/" target="_blank" class="nav-link social-link">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/markyang0613" target="_blank" class="nav-link social-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
+          <div class="nav-indicator"></div>
+        </nav>
       </div>
-    </section>
+    </header>
 
-    
-
-
-
-    <!-- timeline section -->
-    <section id="timeline-section">
-      <h2>Work Experience</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-content">
-            <h3>Software Development Intern at PNCRM</h3>
-            <div class="timeline-date">Jul 2019 - Aug 2019</div>
-            <p>Engineered predictive algorithms during a two-month internship focusing on bankruptcy risks, establishing clear metrics which pinpointed three key failure points in financial health assessments for banking institutions.</p>
+    <main>
+      <!-- Introduction Section -->
+      <section id="introduction-section">
+        <div class="intro-container">
+          <div class="intro-text">
+            <h2>Introduction</h2>
+            <p>As a driven and passionate data science professional with expertise in 
+              machine learning, predictive analytics, and AI, I specialize in transforming 
+              complex datasets into actionable insights. My academic background in Data Science 
+              from UC Berkeley, combined with hands-on experience in building machine learning 
+              models and solving real-world problems, allows me to deliver innovative solutions 
+              in healthcare, education, and business. Whether it's enhancing predictive accuracy or 
+              developing robust models for diverse industries, I thrive on crafting data-driven 
+              strategies that drive measurable results. I'm excited about leveraging cutting-edge 
+              technologies to create impactful solutions and collaborate with forward-thinking 
+              teams.</p>
+          </div>
+          <div class="intro-image-container">
+            <img src="introduction.jpg" alt="Joonseo Yang" class="intro-image">
           </div>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-content">
-            <img src="avellino-logo.png" alt="Avellino Lab Logo" class="logo">
-            <h3>Web Developer at IEEE</h3>
-            <div class="timeline-date">Jan 2021 - May 2021</div>
-            <p>Developed a full-stack web application alongside Web Development Officers for the UC Berkeley Global Startup Fair, supporting over 20 participating companies and enhancing user engagement through streamlined registration processes.</p>
+      </section>
+
+      <!-- timeline section -->
+      <section id="timeline-section">
+        <h2>Work Experience</h2>
+        <div class="timeline-container">
+          <div class="timeline-wrapper">
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-content">
+                  <img src="ieee-logo.png" alt="IEEE Logo" class="logo">
+                  <h3>IEEE</h3>
+                  <h4>Web Development Officer</h4>
+                  <div class="timeline-date">Jan 2021 - May 2021</div>
+                  <p>Developed a full-stack web application alongside Web Development Officers for the UC Berkeley Global Startup Fair, supporting over 20 participating companies and enhancing user engagement through streamlined registration processes.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-content">
+                  <img src="dispatch-logo.png" alt="Dispatch Goods Logo" class="logo">
+                  <h3>Dispatch Goods</h3>
+                  <h4>Backend Developer</h4>
+                  <div class="timeline-date">May 2021 - Aug 2021</div>
+                  <p>Collaborated with Dispatch Goods to elevate online user interaction by redesigning navigation features which increased page views per visit from an average of 3.5 to nearly 5 pages during peak traffic hours.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-content">
+                  <img src="avellino-logo.png" alt="Avellino Lab Logo" class="logo">
+                  <h3>Avellino Lab</h3>
+                  <h4>Data Science Intern</h4>
+                  <div class="timeline-date">Sep 2021 - Dec 2021</div>
+                  <p>Developed and implemented a Natural Language Processing model that predicted the likelihood of eye cancer in patients using X-ray images and genetic data, achieving an accuracy rate of 88% within six months.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-content">
+                  <img src="ey-logo.jpg" alt="EY Parthenon Logo" class="logo">
+                  <h3>EY Parthenon</h3>
+                  <h4>Consulting Intern</h4>
+                  <div class="timeline-date">Jun 2022 - Aug 2022</div>
+                  <p>Employed advanced querying techniques on internal banking databases to extract and analyze customer data, enhancing team efficiency by 30% in report generation processes during a high-stakes consulting project.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-content">
+                  <img src="eight-army-logo.jpg" alt="Eight Army Logo" class="logo">
+                  <h3>Eight United States Army Republic of Korea Army Support Group</h3>
+                  <h4>Data Scientist</h4>
+                  <div class="timeline-date">Nov 2022 - Apr 2024</div>
+                  <p>Analyzed data trends that uncovered insights targeting the three primary factors influencing workplace misconduct; findings provided actionable strategies for refining intervention methods within the organization.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-content">
+                  <img src="oakland-natives-logo.png" alt="Oakland Natives Logo" class="logo">
+                  <h3>Oakland Natives Give Back</h3>
+                  <h4>Data Science Intern</h4>
+                  <div class="timeline-date">Sep 2024 - Dec 2024</div>
+                  <p>Streamlined data transformation processes enhancing usability through Python scripting techniques, achieving time savings of approximately 15 hours per month previously spent resolving inconsistencies within datasets used for reporting purposes.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-content">
-            <img src="avellino-logo.png" alt="Avellino Lab Logo" class="logo">
-            <h3>Backend Developer at Dispatch Goods</h3>
-            <div class="timeline-date">May 2021 - Aug 2021</div>
-            <p>Collaborated with Dispatch Goods to elevate online user interaction by redesigning navigation features which increased page views per visit from an average of 3.5 to nearly 5 pages during peak traffic hours.</p>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills-section">
+        <h2>Skills & Expertise</h2>
+        <div class="skills-container">
+          <div class="skills-category">
+            <h3>Programming Languages</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Python</span>
+                  <span class="skill-level">95%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="progress-bar" style="width: 95%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">JavaScript</span>
+                  <span class="skill-level">85%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="progress-bar" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">SQL</span>
+                  <span class="skill-level">90%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="progress-bar" style="width: 90%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="skills-category">
+            <h3>Machine Learning & AI</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">TensorFlow</span>
+                  <span class="skill-level">88%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="progress-bar" style="width: 88%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">PyTorch</span>
+                  <span class="skill-level">85%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="progress-bar" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Scikit-learn</span>
+                  <span class="skill-level">92%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="progress-bar" style="width: 92%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="skills-category">
+            <h3>Data Science & Analytics</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Pandas</span>
+                  <span class="skill-level">95%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="progress-bar" style="width: 95%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">NumPy</span>
+                  <span class="skill-level">90%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="progress-bar" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Data Visualization</span>
+                  <span class="skill-level">88%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="progress-bar" style="width: 88%"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-content">
-            <img src="avellino-logo.png" alt="Avellino Lab Logo" class="logo">
-            <h3>Data Science Intern at Avellino Lab</h3>
-            <div class="timeline-date">Sep 2021 - Dec 2021</div>
-            <p>Developed and implemented a Natural Language Processing model that predicted the likelihood of eye cancer in patients using X-ray images and genetic data, achieving an accuracy rate of 88% within six months.</p>
+      </section>
+
+      <!-- project section -->
+      <section id="projects-section">
+        <h2>Projects</h2>
+        
+        <!-- Project Navigation -->
+        <nav class="project-nav">
+          <ul class="project-nav-list">
+            <li class="project-nav-item">
+              <a class="project-nav-link active" data-category="all">
+                <i class="fas fa-th-large"></i>
+                All Projects
+                <span class="project-count">12</span>
+              </a>
+            </li>
+            <li class="project-nav-item">
+              <a class="project-nav-link" data-category="web">
+                <i class="fas fa-globe"></i>
+                Web Dev
+                <span class="project-count">1</span>
+              </a>
+            </li>
+            <li class="project-nav-item">
+              <a class="project-nav-link" data-category="ai">
+                <i class="fas fa-brain"></i>
+                AI & ML
+                <span class="project-count">4</span>
+              </a>
+            </li>
+            <li class="project-nav-item">
+              <a class="project-nav-link" data-category="data">
+                <i class="fas fa-chart-bar"></i>
+                Data
+                <span class="project-count">5</span>
+              </a>
+            </li>
+            <li class="project-nav-item">
+              <a class="project-nav-link" data-category="software">
+                <i class="fas fa-code"></i>
+                Software
+                <span class="project-count">3</span>
+              </a>
+            </li>
+          </ul>
+          <div class="project-nav-indicator"></div>
+        </nav>
+
+        <div class="projects-container">
+          <!-- Portfolio Website -->
+          <div class="project-card" data-category="web">
+            <div class="project-thumbnail">
+              <img src="https://picsum.photos/seed/portfolio/400/300" alt="Portfolio Website Preview" loading="lazy">
+              <div class="project-preview">
+                <div class="preview-content">
+                  <h3>Personal Portfolio Website</h3>
+                  <p>Modern and responsive portfolio showcasing my projects and skills.</p>
+                  <div class="preview-actions">
+                    <button class="preview-btn details-btn">View Details</button>
+                    <a href="https://github.com/markyang0613/portfolio-website" class="preview-btn github-btn" target="_blank">
+                      <i class="fab fa-github"></i> GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="category-tag">Web Development</span>
+              <h3>Personal Portfolio Website</h3>
+              <p>A modern, responsive portfolio website built from scratch featuring dynamic animations, interactive project showcases, and smooth scrolling experiences. Implemented with pure HTML, CSS, and JavaScript, incorporating advanced features like category filtering, modal views, and a floating navigation system.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Responsive Design</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Severe Chronic Absenteeism Prediction -->
+          <div class="project-card" data-category="ai">
+            <div class="project-thumbnail">
+              <img src="https://picsum.photos/seed/tradebot/400/300" alt="Trade Bot Project Preview" loading="lazy">
+              <div class="project-preview">
+                <div class="preview-content">
+                  <h3>Severe Chronic Absenteeism Prediction</h3>
+                  <p>Analyzing and implementing tailored solutions to solve SCA in schools.</p>
+                  <div class="preview-actions">
+                    <button class="preview-btn details-btn">View Details</button>
+                    <a href="https://github.com/markyang0613/Severe_Chronic_Absenteeism" class="preview-btn github-btn" target="_blank">
+                      <i class="fab fa-github"></i> GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="category-tag">AI & Machine Learning</span>
+              <h3>Severe Chronic Absenteeism Prediction</h3>
+              <p>This project aimed to identify the key predictors of severe chronic absenteeism (SCA) in schools and design effective, data-driven interventions to boost student attendance by at least 6%. </p>
+              <div class="tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Data Analysis</span>
+                <span class="tech-tag">Machine Learning</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Most Streamed Songs -->
+          <div class="project-card" data-category="data">
+            <div class="project-thumbnail">
+              <img src="https://picsum.photos/seed/music/400/300" alt="Music Analysis Preview" loading="lazy">
+              <div class="project-preview">
+                <div class="preview-content">
+                  <h3>Most Streamed Songs of 2024</h3>
+                  <p>Data analysis of trending songs and user interactions.</p>
+                  <div class="preview-actions">
+                    <button class="preview-btn details-btn">View Details</button>
+                    <a href="https://github.com/joonseoyang/most_streamed_songs2024" class="preview-btn github-btn" target="_blank">
+                      <i class="fab fa-github"></i> GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="category-tag">Data Analysis</span>
+              <h3>Most Streamed Songs of 2024</h3>
+              <p>Generated an original dataset comprising over 200 unique variables related to user interactions with trending songs, directly influencing campaign design decisions among music marketers aiming for better audience reach.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Data Analysis</span>
+                <span class="tech-tag">Music Analytics</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sleeptime Prediction -->
+          <div class="project-card" data-category="ai">
+            <div class="project-thumbnail">
+              <img src="https://picsum.photos/seed/sleep/400/300" alt="Sleep Analysis Preview" loading="lazy">
+              <div class="project-preview">
+                <div class="preview-content">
+                  <h3>Sleeptime Prediction</h3>
+                  <p>ML model for predicting sleep patterns and quality.</p>
+                  <div class="preview-actions">
+                    <button class="preview-btn details-btn">View Details</button>
+                    <a href="https://github.com/markyang0613/sleeptime-prediction" class="preview-btn github-btn" target="_blank">
+                      <i class="fab fa-github"></i> GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="category-tag">AI & Machine Learning</span>
+              <h3>Sleeptime Prediction</h3>
+              <p>Built classification model, using random forest classifier, that classifies sleeptime into categories of low, medium, high based on physical exercise, reading, phone surfing, work, caffeine intake, and relaxation, with 94% accuracy.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Machine Learning</span>
+                <span class="tech-tag">Random Forest</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Food Safety -->
+          <div class="project-card" data-category="data">
+            <div class="project-thumbnail">
+              <img src="https://picsum.photos/seed/food/400/300" alt="Food Safety Analysis Preview" loading="lazy">
+              <div class="project-preview">
+                <div class="preview-content">
+                  <h3>Food Safety</h3>
+                  <p>Analysis of restaurant safety scores in San Francisco.</p>
+                  <div class="preview-actions">
+                    <button class="preview-btn details-btn">View Details</button>
+                    <a href="https://github.com/markyang0613/Food-Safety" class="preview-btn github-btn" target="_blank">
+                      <i class="fab fa-github"></i> GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="category-tag">Data Analysis</span>
+              <h3>Food Safety</h3>
+              <p>Investigated restaurant food safety scores for restaurants in San Francisco using data from the SF Department of Public Health, focusing on data cleaning and exploratory data analysis with Pandas.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">Data Analysis</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Blended Sea Wind -->
+          <div class="project-card" data-category="data">
+            <div class="project-thumbnail">
+              <img src="https://picsum.photos/seed/wind/400/300" alt="Wind Analysis Preview" loading="lazy">
+              <div class="project-preview">
+                <div class="preview-content">
+                  <h3>Blended Sea Wind</h3>
+                  <p>Analysis of global wind patterns and ocean surface winds.</p>
+                  <div class="preview-actions">
+                    <button class="preview-btn details-btn">View Details</button>
+                    <a href="https://github.com/markyang0613/Blended-Sea-Wind" class="preview-btn github-btn" target="_blank">
+                      <i class="fab fa-github"></i> GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="category-tag">Data Analysis</span>
+              <h3>Blended Sea Wind</h3>
+              <p>Analyzed Blended Sea Wind data to test global wind pattern theories using randomization, data cleaning, and visualization techniques on high-resolution ocean surface vector winds and wind stresses.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Data Visualization</span>
+                <span class="tech-tag">Statistical Analysis</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sales Analysis -->
+          <div class="project-card" data-category="data">
+            <div class="project-thumbnail">
+              <img src="https://picsum.photos/seed/sales/400/300" alt="Sales Analysis Preview" loading="lazy">
+              <div class="project-preview">
+                <div class="preview-content">
+                  <h3>Sales Analysis</h3>
+                  <p>Analysis of electronics store sales data using Python.</p>
+                  <div class="preview-actions">
+                    <button class="preview-btn details-btn">View Details</button>
+                    <a href="https://github.com/markyang0613/Sales-Analysis" class="preview-btn github-btn" target="_blank">
+                      <i class="fab fa-github"></i> GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="category-tag">Data Analysis</span>
+              <h3>Sales Analysis</h3>
+              <p>Analyzed 12 months of electronics store sales data using Python Pandas & Matplotlib to answer key business questions, processing hundreds of thousands of purchase records.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">Matplotlib</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Data Science Workflow -->
+          <div class="project-card" data-category="data">
+            <div class="project-thumbnail">
+              <img src="https://picsum.photos/seed/workflow/400/300" alt="Data Science Workflow Preview" loading="lazy">
+              <div class="project-preview">
+                <div class="preview-content">
+                  <h3>Data Science Workflow</h3>
+                  <p>Comprehensive analysis of contraceptive dataset.</p>
+                  <div class="preview-actions">
+                    <button class="preview-btn details-btn">View Details</button>
+                    <a href="https://github.com/markyang0613/Data-Science-Workflow" class="preview-btn github-btn" target="_blank">
+                      <i class="fab fa-github"></i> GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="category-tag">Data Analysis</span>
+              <h3>Data Science Workflow</h3>
+              <p>Conducted a comprehensive data science workflow analysis on a contraceptive dataset, applying academic knowledge in a practical setting to determine optimal contraception methods.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Data Analysis</span>
+                <span class="tech-tag">Statistical Modeling</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- LLM Spam-Ham Classification -->
+          <div class="project-card" data-category="ai">
+            <div class="project-thumbnail">
+              <img src="https://picsum.photos/seed/spam/400/300" alt="Spam Classification Preview" loading="lazy">
+              <div class="project-preview">
+                <div class="preview-content">
+                  <h3>LLM Spam-Ham Classification</h3>
+                  <p>Message classification using ChatGPT-3.5 Turbo model.</p>
+                  <div class="preview-actions">
+                    <button class="preview-btn details-btn">View Details</button>
+                    <a href="https://github.com/markyang0613/LLM_SpamHamClassifier" class="preview-btn github-btn" target="_blank">
+                      <i class="fab fa-github"></i> GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="category-tag">AI & Machine Learning</span>
+              <h3>LLM Spam-Ham Classification</h3>
+              <p>Developed a spam/ham classifier using ChatGPT-3.5 Turbo model, leveraging advanced language understanding for accurate message classification without additional fine-tuning.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">NLP</span>
+                <span class="tech-tag">LLM</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2048AI -->
+          <div class="project-card" data-category="ai">
+            <div class="project-thumbnail">
+              <img src="https://picsum.photos/seed/2048/400/300" alt="2048 AI Preview" loading="lazy">
+              <div class="project-preview">
+                <div class="preview-content">
+                  <h3>2048AI</h3>
+                  <p>AI implementation for playing the 2048 game.</p>
+                  <div class="preview-actions">
+                    <button class="preview-btn details-btn">View Details</button>
+                    <a href="https://github.com/markyang0613/2048AI/tree/main" class="preview-btn github-btn" target="_blank">
+                      <i class="fab fa-github"></i> GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="category-tag">AI & Machine Learning</span>
+              <h3>2048AI</h3>
+              <p>Developed a Python model implementing game trees with minimax and alpha-beta pruning algorithms to create an AI capable of playing 2048, incorporating mathematical and strategic planning for optimal moves.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">AI</span>
+                <span class="tech-tag">Game Theory</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cats Project -->
+          <div class="project-card" data-category="software">
+            <div class="project-thumbnail">
+              <img src="https://picsum.photos/seed/cats/400/300" alt="Cats Typing Game Preview" loading="lazy">
+              <div class="project-preview">
+                <div class="preview-content">
+                  <h3>Cats Typing Game</h3>
+                  <p>Typing speed measurement with autocorrect feature.</p>
+                  <div class="preview-actions">
+                    <button class="preview-btn details-btn">View Details</button>
+                    <a href="https://github.com/markyang0613/Cats" class="preview-btn github-btn" target="_blank">
+                      <i class="fab fa-github"></i> GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="category-tag">Software Development</span>
+              <h3>Cats Typing Game</h3>
+              <p>A program that measures typing speed with an autocorrect feature that attempts to correct spelling in real-time.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Algorithm</span>
+                <span class="tech-tag">NLP</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ants Project -->
+          <div class="project-card" data-category="software">
+            <div class="project-thumbnail">
+              <img src="https://picsum.photos/seed/ants/400/300" alt="Ants Game Preview" loading="lazy">
+              <div class="project-preview">
+                <div class="preview-content">
+                  <h3>Ants Vs. SomeBees</h3>
+                  <p>Tower defense game implementation.</p>
+                  <div class="preview-actions">
+                    <button class="preview-btn details-btn">View Details</button>
+                    <a href="https://github.com/markyang0613/Ants-Vs.-SomeBees" class="preview-btn github-btn" target="_blank">
+                      <i class="fab fa-github"></i> GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="category-tag">Software Development</span>
+              <h3>Ants Vs. SomeBees</h3>
+              <p>A tower defense game combining functional and object-oriented programming paradigms, inspired by Plants Vs. Zombies.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">OOP</span>
+                <span class="tech-tag">Game Dev</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Enigma Project -->
+          <div class="project-card" data-category="software">
+            <div class="project-thumbnail">
+              <img src="https://picsum.photos/seed/enigma/400/300" alt="Enigma Machine Preview" loading="lazy">
+              <div class="project-preview">
+                <div class="preview-content">
+                  <h3>Enigma Machine</h3>
+                  <p>Simulation of the Enigma encryption machine.</p>
+                  <div class="preview-actions">
+                    <button class="preview-btn details-btn">View Details</button>
+                    <a href="https://github.com/markyang0613/Enigma" class="preview-btn github-btn" target="_blank">
+                      <i class="fab fa-github"></i> GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="category-tag">Software Development</span>
+              <h3>Enigma Machine</h3>
+              <p>A simulator for a generalized version of the Enigma machine, handling message encryption and decryption.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Cryptography</span>
+                <span class="tech-tag">Algorithms</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gitlet Project -->
+          <div class="project-card" data-category="software">
+            <div class="project-thumbnail">
+              <img src="https://picsum.photos/seed/gitlet/400/300" alt="Gitlet Project Preview" loading="lazy">
+              <div class="project-preview">
+                <div class="preview-content">
+                  <h3>Gitlet</h3>
+                  <p>A version-control system that mimics the basic features of Git.</p>
+                  <div class="preview-actions">
+                    <button class="preview-btn details-btn">View Details</button>
+                    <a href="https://github.com/markyang0613/Gitlet" class="preview-btn github-btn" target="_blank">
+                      <i class="fab fa-github"></i> GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="category-tag">Software Development</span>
+              <h3>Gitlet</h3>
+              <p>A version-control system that mimics the basic features of Git, implemented from scratch.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Version Control</span>
+                <span class="tech-tag">File System</span>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-content">
-            <img src="ey-logo.jpg" alt="EY Parthenon Logo" class="logo">
-            <h3>Consulting Intern at EY Parthenon</h3>
-            <div class="timeline-date">Jun 2022 - Aug 2022</div>
-            <p>Employed advanced querying techniques on internal banking databases to extract and analyze customer data, enhancing team efficiency by 30% in report generation processes during a high-stakes consulting project.</p>
+      </section>
+
+      <!-- contact section -->
+      <section id="contact-section" class="contact-section">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="user-email">Your Email</label>
+            <input type="email" id="user-email" required>
           </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-content">
-            <img src="eight-army-logo.jpg" alt="Eight Army Logo" class="logo">
-            <h3>Data Scientist at Eight United States Army Republic of Korea Army Support Group</h3>
-            <div class="timeline-date">Nov 2022 - Apr 2024</div>
-            <p>Analyzed data trends that uncovered insights targeting the three primary factors influencing workplace misconduct; findings provided actionable strategies for refining intervention methods within the organization.</p>
+          <div class="form-group">
+            <label for="user-message">Your Message</label>
+            <textarea id="user-message" required></textarea>
           </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-content">
-            <img src="oakland-natives-logo.jpg" alt="Oakland Natives Logo" class="logo">
-            <h3>Data Science Intern at Oakland Natives Give Back</h3>
-            <div class="timeline-date">Sep 2024 - Dec 2024</div>
-            <p>Streamlined data transformation processes enhancing usability through Python scripting techniques, achieving time savings of approximately 15 hours per month previously spent resolving inconsistencies within datasets used for reporting purposes.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+          <button type="submit" id="send-button">Send</button>
+        </form>
+      </section>
+    </main>
 
-
-
-    <!-- project section -->
-
-    <section id="projects-section">
-      <h2>Projects</h2>
-      <div class="projects-container">
-        <div class="project-card">
-          <h3>Trade Bot</h3>
-          <p>Achieved a total profit increase of 234% and an annual growth rate of 36.24% by crafting an advanced stock market strategy leveraging machine learning algorithms for predictive analysis on S&P 500 ETF prices.</p>
-          <button class="learn-more-btn" data-url="https://github.com/joonseoyang/Tradebot">Learn More</button>
-        </div>
-        <div class="project-card">
-          <h3>Most Streamed Songs of 2024	</h3>
-          <p>Generated an original dataset comprising over 200 unique variables related to user interactions with trending songs, directly influencing campaign design decisions among music marketers aiming for better audience reach.</p>
-          <button class="learn-more-btn" data-url="https://github.com/joonseoyang/most_streamed_songs2024">Learn More</button>
-        </div>
-        <div class="project-card">
-          <h3>Sleeptime Prediction</h3>
-          <p>Built classification model, using random forest classifier, that classifies sleeptime into categories of low, medium, high based on physical exercise, reading, phone surfing, work, caffeine intake, and relaxation, with 94% accuracy.</p>
-          <button class="learn-more-btn">Learn More</button>
-        </div>
-        <div class="project-card">
-          <h3>Ants VS. SomeBees</h3>
-          <p>This project combines functional and object-oriented programming paradigms. I created a tower defense game called Ants Vs. SomeBees as it was insipired from by the PopCap Games' Plants Vs. Zombies.</p>
-          <button class="learn-more-btn" data-url="https://github.com/markyang0613/Ants-Vs.-SomeBees">Learn More</button>
-        </div>
-        <div class="project-card">
-          <h3>2048AI</h3>
-          <p>In this project, I developed python model of a game trees. I implemented minimax and alpha-beta pruning codes with mathematic and strategic planning to build heuristics. The codes implemented were used by the AIs to finish the game.</p>
-          <button class="learn-more-btn" data-url="https://github.com/markyang0613/2048AI/tree/main">Learn More</button>
-        </div>
-        <div class="project-card">
-          <h3>Enigma</h3>
-          <p>This project involves building a simulator for a generalized version of the machine 'Enigma'. My program will take descriptions of possible initial configurations of the machine and messages to encode or decode.</p>
-          <button class="learn-more-btn" data-url="https://github.com/markyang0613/Enigma">Learn More</button>
-        </div>
-        <div class="project-card">
-          <h3>Cats</h3>
-          <p>In this project, I wrote a program that measure typing speed. As an additional features, I implemented autocorrect which attempts to correct the spelling of a word after user types it. This project was inspired by Type Racer.</p>
-          <button class="learn-more-btn" data-url="https://github.com/markyang0613/Cats">Learn More</button>
-        </div>
-        <div class="project-card">
-          <h3>Food Safety</h3>
-          <p>In this project, I investigated restaurant food safety scores for restaurants in San Francisco. The scores and violation information have been made available by the San Francisco Departmemnt of Public health. The main goal of this project was to walk through the process of Data Cleaning and EDA with Pandas.</p>
-          <button class="learn-more-btn" data-url="https://github.com/markyang0613/Food-Safety">Learn More</button>
-        </div>
-        <div class="project-card">
-          <h3>Blended Sea Wind</h3>
-          <p>In this project, I worked with Blended Sea Wind data, which is a measure of high-resolution ocean surface vector winds and wind stresses on 0.25 degree grid. With the data given, I tested the theory of global wind pattern, using randomization, data cleaning, and visualization.</p>
-          <button class="learn-more-btn" data-url="https://github.com/markyang0613/Blended-Sea-Wind">Learn More</button>
-        </div>
-        <div class="project-card">
-          <h3>Sales Analysis</h3>
-          <p>In this project, I used Python Pandas & Python Matplotlib to analyze and answer business questions about 12 months worth of sales data. The data contains hundreds of thousands of electronics store purchases broken down by month, product type, cost, purchase address, etc.</p>
-          <button class="learn-more-btn" data-url="https://github.com/markyang0613/Sales-Analysis">Learn More</button>
-        </div>
-        <div class="project-card">
-          <h3>Wormax</h3>
-          <p>In this project, I developed my own application from scratch using a special coding platform called "Snap". The application that I created is was a game wormax.</p>
-          <button class="learn-more-btn" data-url="https://github.com/markyang0613/Wormax">Learn More</button>
-        </div>
-        <div class="project-card">
-          <h3>Data Science Workflow</h3>
-          <p>The purpose of this project was to carry through a data Science workflow and put into practice what I have learned in school course in a more open-ended setting. I worked with a contraceptive dataset that was conducted on a set of married women to determine a best method of contraception.</p>
-          <button class="learn-more-btn" data-url="https://github.com/markyang0613/Data-Science-Workflow">Learn More</button>
-        </div>
-        <div class="project-card">
-          <h3>LLM_Spam-Ham Classification</h3>
-          <p>This project demonstrates how to utilize the ChatGPT-3.5 Turbo model from OpenAI to create a spam/ham classifier for SMS messages. By leveraging the model’s robust language understanding, the classifier can differentiate between spam and legitimate (ham) messages without any additional fine-tuning.</p>
-          <button class="learn-more-btn" data-url="https://github.com/markyang0613/LLM_SpamHamClassifier">Learn More</button>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- contact section -->
-
-    <section id="contact-section" class="contact-section">
-      <h2>Contact Me</h2>
-      <form id="contact-form">
-        <div class="form-group">
-          <label for="user-email">Your Email</label>
-          <input type="email" id="user-email" required>
-        </div>
-        <div class="form-group">
-          <label for="user-message">Your Message</label>
-          <textarea id="user-message" required></textarea>
-        </div>
-        <button type="submit" id="send-button">Send</button>
-      </form>
-    </section>
-
-
-  </main>
-
-  <footer>
-    <p>© 2025 My Website</p>
-  </footer>
+    <footer>
+      <p>© 2025 My Website</p>
+    </footer>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script>
@@ -214,6 +725,12 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="script.js"></script>
   
-  
+  <!-- Project Modal -->
+  <div class="project-modal">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <div class="modal-body"></div>
+    </div>
+  </div>
 </body>
 </html>
